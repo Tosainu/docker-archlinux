@@ -22,7 +22,7 @@ jobs:
       digest: ${{ fromJSON(steps.bake.outputs.metadata)[github.job]['containerimage.digest'] }}
     steps: &archlinux-steps
       - &metadata-action
-        uses: docker/metadata-action@v5.10.0
+        uses: docker/metadata-action@v6.0.0
         id: meta
         env:
           DOCKER_METADATA_ANNOTATIONS_LEVELS: index
