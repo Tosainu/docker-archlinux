@@ -41,7 +41,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - uses: docker/bake-action@v7.0.0
+      - uses: docker/bake-action@v7.1.0
         id: bake
         with:
           targets: ${{ github.job }}
